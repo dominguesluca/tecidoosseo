@@ -1,0 +1,106 @@
+/* Estilos gerais */
+.questions-container {
+  width: 100%;
+  height: 100vh; /* Define a altura para cobrir toda a tela */
+  background-image: url('../images/fundo.jpg'); /* Adicione a imagem de fundo */
+  background-size: cover; /* Faz a imagem cobrir completamente a tela */
+  background-position: center; /* Centraliza a imagem */
+  background-repeat: no-repeat; /* Evita repetição da imagem */
+  background-color: rgba(0, 0, 0, 0.5); /* Define o fundo como preto transparente */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  position: relative; /* Para manter os elementos filhos posicionados corretamente */
+  overflow: hidden; /* Impede a rolagem horizontal */
+  color: white;
+  font-family: Arial, sans-serif;
+}
+
+/* Fundo da pergunta */
+.question-background {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+/* Estilos da grade de palavras */
+.grid-container {
+  display: flex;
+  justify-content: center;
+  max-width: 100%; /* Adiciona uma largura máxima para o contêiner */
+  overflow: auto; /* Adiciona rolagem horizontal caso o contêiner seja pequeno demais */
+  border-radius: 20px;
+}
+
+.word-grid {
+  display: grid;
+  grid-template-columns: repeat(12, 10vw); /* Tamanho relativo para as colunas */
+  grid-template-rows: repeat(12, 10vw); /* Tamanho relativo para as linhas */
+  gap: 2px;
+  max-width: 100%; /* Adiciona uma largura máxima para o quadro */
+  max-height: 30%;
+  overflow: auto; /* Adiciona rolagem caso o quadro seja grande demais */
+  background-color: rgba(0, 0, 0, 0.5); /* Fundo preto transparente */
+}
+
+.word-grid-cell {
+  display: flex;
+  align-items: center;
+  justify-content: center; 
+  /*border: 0.1px solid #ccc*/;
+  font-size: 1em; /* Set a fixed font size */
+  width: flex; /* Set a fixed width for the cell */
+  height: flex; /* Set a fixed height for the cell */
+  color: white; /* Text color */
+  font-family: Arial, sans-serif;
+}
+
+
+/* Estilos dos botões de resposta */
+.answers-container {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.answer {
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.5); /* Fundo preto transparente */
+  color: white;
+  cursor: pointer;
+  font-family: Arial, sans-serif;
+}
+
+.answer.selected {
+  background-color: rgba(0, 255, 0, 0.5); /* Fundo verde transparente para a resposta selecionada */
+}
+
+.answer:hover {
+  background-color: rgba(0, 255, 0, 0.5); /* Fundo verde transparente ao passar o mouse */
+}
+
+/* Estilos do botão "Próxima" */
+.next-button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #007bff; /* Cor do botão "Próxima" */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.next-button:hover {
+  background-color: #0056b3; /* Cor do botão "Próxima" ao passar o mouse */
+}
+.selected {
+  background-color: lightgreen; /* Adicione a cor de fundo desejada para destacar a palavra correta */
+}
+.correct-cell {
+  background-color: green;
+}

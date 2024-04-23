@@ -1,0 +1,17 @@
+.home-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #000;
+    color: #fff;
+  }
+  
+  h1 {
+    margin-top: 50px; /* Adicione margem superior para elevar o título */
+  }
+  img {
+    width: 100px; /* Reduz a largura da imagem para 100px */
+    height: auto; /* Define a altura da imagem automaticamente */
+  }

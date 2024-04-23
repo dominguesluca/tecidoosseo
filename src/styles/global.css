@@ -1,0 +1,15 @@
+/* src/styles/global.css */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+   
+  }
+
+  
+
+  .quadro {
+    background-color: rgba(0, 0, 0, 0.5); /* Cor de fundo preta com transparência */
+    padding: 20px;
+    border-radius: 10px;
+  }
